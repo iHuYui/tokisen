@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超ときめき♡宣伝部 セットリスト集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .multi-color-text span {
+            font-weight: bold;
+        }
+        .pink {
+            color: #ff69b4;
+        }
+        .red {
+            color: #ff0000;
+        }
+        .lemon {
+            color: #fff44f;
+        }
+        .blue {
+            color: #0000ff;
+        }
+        .purple {
+            color: #800080;
+        }
+        .dropdown {
+            margin-top: 20px;
+        }
+        .dropdown select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .dropdown select:hover {
+            border-color: #ff69b4;
+        }
+        .go-button {
+            margin-top: 20px;
+            background-color: #ff69b4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .go-button:hover {
+            background-color: #ff85c1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="multi-color-text">
+            <span class="pink">超</span>
+            <span class="red">と</span>
+            <span class="lemon">き</span>
+            <span class="blue">め</span>
+            <span class="purple">き</span>
+            <span class="pink">♡</span>
+            <span class="red">宣</span>
+            <span class="lemon">伝</span>
+            <span class="blue">部</span>
+        </h1>
+        <p>ライブを選択:</p>
+        <div class="dropdown">
+            <select id="live-select">
+                <option value="">ライブを選択してください</option>
+                <!-- ここにライブ名を追加 -->
+                <option value="live1.html">ライブ名1</option>
+                <option value="live2.html">ライブ名2</option>
+                <option value="live3.html">ライブ名3</option>
+                <!-- ライブ名が多い場合、ここにさらに追加 -->
+            </select>
+        </div>
+        <button class="go-button" onclick="goToSetlist()">セットリストを見る</button>
+    </div>
+
+    <script>
+        function goToSetlist() {
+            const select = document.getElementById('live-select');
+            const selectedLive = select.value;
+            if (selectedLive) {
+                window.location.href = selectedLive;
+            } else {
+                alert('ライブを選択してください');
+            }
+        }
+    </script>
+</body>
+</html>
