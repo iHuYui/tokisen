@@ -86,8 +86,8 @@
             <select id="live-select">
                 <option value="">ライブを選択してください</option>
                 <!-- ここにライブ名を追加 -->
-                <option value="live1.html">ライブ名1</option>
-                <option value="live2.html">ライブ名2</option>
+                <option value="live2.html">みんなをすきっ!にさせるハートロックオンZepp Tour 2021</option>
+                <option value="live1.html">ときめき♡宣伝部のどきどき♡クリスマスパーティーvol.</option>
                 <option value="live3.html">ライブ名3</option>
                 <!-- ライブ名が多い場合、ここにさらに追加 -->
             </select>
